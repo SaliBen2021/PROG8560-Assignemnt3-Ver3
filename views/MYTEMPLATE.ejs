@@ -1,0 +1,115 @@
+
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+    
+</head>
+
+<body>
+    
+    <%- include('layouts/header.ejs'); -%>
+
+    <%- include('layouts/headerBody.ejs'); -%>
+    
+
+        
+
+
+    <div id="div1">
+        <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+
+        <h2>Hoya Carnosa</h2>
+        <div class="line"></div> <!-- Dividing line -->
+        <div class="articleBody clear">
+            <main>
+                <header id="header">Please enter your e-mail address to subscribe to our newsletter.</header>
+                <br>
+                <form name="email_form" action="subscribe.php" method="post">
+                    <label class="L1">Name:</label>
+                    <input id="In" type="text" name="Name" autofocus>&nbsp;
+                    <label class="L1">Address:</label>
+                    <input class="In2" type="text" name="Address">&nbsp;
+                    <label class="L1">Phone Number:</label>
+                    <input class="In2" type="text" name="Phone Number">
+                    <br><br>
+                    <fieldset>
+                        <input type="radio" name="Education1" value="School">
+                        <label>School</label><br>
+                        <input type="radio" name="Education2" value="Post Graduation">
+                        <label>Post Graduation</label><br>
+                        <input type="radio" name="Education3" value="Other certificates">
+                        <label>Other certificates</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+
+                        <input type="checkbox" name="info1" value="Single">
+                        <label>Single</label><br>
+                        <input type="checkbox" name="info2" value="Married">
+                        <label>Married</label><br>
+                        <input type="checkbox" name="info3" value="Divorsed">
+                        <label>Divorsed</label>
+                    </fieldset>
+                    <br>
+
+                    <label>AGE:</label>&nbsp;
+                    <select name="AGE">
+                        <optgroup label="AGE ">
+                            <option value="ny10">18-29</option>
+                            <option value="ny12">30-40</option>
+                            <option value="ny16">40-60</option>
+                            <option value="ny16">60+</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    Comments:<br>
+                    <textarea name="comments" placeholder="If you have any comments, please enter them here.">
+                    </textarea>
+                    <br>
+                    <br>
+                    <input id="Btn2" type="button" name="Reset" value="Reset">
+                    <input id="Btn1" type="button" name="Submit" value="Submit">
+
+
+                </form>
+
+            </main>
+            <div id="asideDiv">
+
+               
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Article 1 end -->
+
+
+
+
+    <footer>
+        <!-- Marking the footer section -->
+
+        <div class="line"></div>
+
+        <p id="footerP">&copy;Copyright 2021 - Sali Faisal
+            <!-- Change the copyright notice -->
+
+            <a class="footera" href="https://www.hortzone.com/blog/indoor-flowering-plants/"> Reference</a>
+            <a class="footera"
+                href="mailto:sbensuleiman3739@conestogac.on.ca">Contact:sbensuleiman3739@conestogac.on.ca</a>
+        </p>
+
+
+    </footer>
+
+
+
+</body>
+

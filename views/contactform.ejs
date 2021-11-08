@@ -1,0 +1,36 @@
+<head>
+    <%- include('layouts/header.ejs'); -%>
+    
+  </head>
+  
+  <body>  
+  
+    <%- include('layouts/headerBody.ejs'); -%>
+    <div id="div1">
+    <form method="POST" action="/contact">
+        <div class="formfield">
+            <label for="name">Name: </label>
+            <input type="text" name="name">
+            <div class="clear"></div>
+        </div>
+        <div class="formfield">
+            <label for="email">Email: </label>
+            <input type="text" name="email">
+            <div class="clear"></div>
+        </div>
+        <div class="formfield">
+            <input class="submit" type="submit" value="Submit">
+        </div>
+            </form>
+            
+</Body>
+<% if(typeof errors !== 'undefined'){
+    for(var error of errors){
+        %>
+            <p id="Padmin"><%= error.msg %></p>
+        <%
+    }
+}
+%>
+</div>
+<%- include('layouts/footer'); -%>

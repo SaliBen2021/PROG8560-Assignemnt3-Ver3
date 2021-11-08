@@ -1,0 +1,506 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	font-family:Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);   
+	width:960px;
+	position:relative;
+	padding-left:250px;
+	
+	
+}
+#sidebarA {
+    width: 240px;
+    height: 350px;     /* to give the sidebar some height                           for its border */
+    float: left;
+	}
+
+#sidebarB {
+    width: 240px;
+    height: 350px;     /* to give the sidebar some height                           for its border */
+    float: right;
+	}
+
+ 
+
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	
+	color:#DDA0DD;
+	text-decoration:none;
+	outline:none;
+	
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+	color:#DDA0DD
+	}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:Verdana;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+.go_up {
+	float: right; 
+	padding: 15px 15px; 
+    
+}
+.go_up_2 {
+	float: right; 
+	   
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+.pbold{
+	font-size:1.2em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background: repeat-x 50% 50% #DDA0DD;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:4em;
+	
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:	white;
+	display:block;
+	float:left;
+	font-size:1em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#fbc7bf;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:white;
+	margin:3em 0;
+	padding:20px;
+	
+}
+#div1{
+	background-color:white;
+	margin:3em 0;
+	padding:20px;
+	
+}
+#article1 , #article2, #article3,#article4 {
+	color:#DDA0DD;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	
+}
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:300px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+	color:black;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+	color:black;
+}
+
+footer a,footer a:visited{
+	color:black;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+	
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+	
+}
+#footerP{
+	color:black;
+	font-color:black;
+	}
+.footera{
+	font-color:black;
+	border: 0px solid white;
+	text-decoration:none;
+	outline:none;
+	padding:0px 0px;
+}
+.footera:hover{
+	background-color:#fbc7bf;
+}
+#asideDiv{
+	float: left;
+	width: 35%;
+margin: 0 auto ;
+}
+
+#img1{
+	margin:0px 0px;
+	padding-bottom:0px;
+	}
+
+main{
+	float : right;
+	width: 64%;
+    height: 350px;       
+    border-left: 2px solid #ef9c00;
+    }
+	
+#header{
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow: 0 1px 1px black;
+	color: #F08080;
+	font-size:20px;
+}
+#header2{
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow: 0 1px 1px black;
+	color: #F08080;
+	font-size:20px;
+	margin-left:19px;
+}	
+.L1{
+	ont-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow: 0 1px 1px black;
+	color: #F08080;
+	font-size:15px;
+}
+
+#In{
+	width:90px;
+	border-color:black;
+	border-width:3px;
+}
+
+.In2{
+	width:90px;
+	font-size:20px;
+}
+fieldset{
+	width:20%
+}
+textarea {
+    height: 2em;
+    width: 25em; 
+    font-family: Arial, Helvetica, sans-serif; }
+}
+select{
+	width:50%
+	ont-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	color: #F08080;
+	font-size:10px;
+	margin:0;
+}
+#Btn1{
+	font:20px;
+	font-weight:bold;
+	width:100px;
+	height:20px;
+	margin:0;
+	float:left;
+	background-color:#DDA0DD;
+	color:black;
+}
+#Btn2{
+	font:20px;
+	font-weight:bold;
+	width:100px;
+	height:20px;
+	margin:0;
+	float: right; 
+	background-color:#DDA0DD;
+	color:black;
+}
+#home{
+	color:blue;
+	text-align:middle;
+	float:center;
+}
+#p2{
+	padding-bottom:0px;
+	text-align:center;
+}
+#article5{
+	column-count: 3;
+    column-rule: 2px solid black;
+}
+	
+.title2{
+	
+	color:#ef9c00;
+	font-weight:bold;
+}
+.title3{
+	
+	color:black;
+}
+.title4{
+	
+	color:#ef9c00;
+	font-weight:bold;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left, .right {
+  width: 30%;
+}
+
+.middle {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list{
+	line-height:200%
+}
+#p1{
+	padding-left:15px;
+	font-size:18px;
+}
+
+form, .formData{
+   background-color:white;
+	margin:20px 250px;
+	padding:20px;
+	
+}
+label{
+    width: 170px;
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+	padding-left:130px;
+}
+#p3{
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow: 0 1px 1px black;
+	color: #F08080;
+	font-size:20px;
+	padding-left:30px;
+	text-align:center;
+}
+input{
+	margin-left:130px;
+}
+#inp{
+	margin-left:138px;
+	margin-top:20px;
+}
+
+#errors{
+    color: red;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    padding-left: 44px;
+    margin: 0;
+    border-radius: 10px;
+}
+#pAdmin{
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow: 0 1px 1px black;
+	color: #F08080;
+	font-size:30px;
+	padding-left:30px;
+	text-align:center;
+}
+editor1{
+	font-size:20px;
+}
+
+input[type="submit"]{
+    width: 40%;
+    font-size: 22px;
+    background-color: #d67c7c;;
+    color: black;
+    border: 0px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+	margin-top:10px;
+	margin-left:134px;
+}
+table{
+    border: 2px solid white;
+    border-collapse: collapse;
+    margin: 20px auto;
+    color: white;
+}
+
+td{
+    background-color:white;
+    border: 2px solid #6e0360;
+    padding: 12px 15px;
+    color: #6e0360;
+}
+
+th{
+    border: 2px solid white;
+    padding: 12px 15px;
+    font-weight: bold;
+    background-color: #6e0360;
+    color: white;
+    text-align: center;
+}
+#ulAbout{
+	margin-left:125px;
+	color:#F08080;
+	font-size:15px;
+}

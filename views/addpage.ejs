@@ -1,0 +1,34 @@
+<head>
+  <%- include('layouts/header.ejs'); -%>
+  
+</head>
+
+<body>  
+
+  <%- include('layouts/headerAdmin.ejs'); -%>
+
+      <form class="page-form" method="post">
+        <p>
+          <label for="title">Page Title:</label>
+          <input type="text" name="title" id="title">
+        </p>
+        <p>
+          <label for="image">Image Title:</label>
+          <input type="text" name="image" id="image">
+        </p>
+        <p>
+          <textarea id="content" name="content"></textarea>
+          <script>
+            CKEDITOR.config.autoParagraph = false;
+          CKEDITOR.replace('content');           
+          </script>
+      </p >
+      
+      <p>
+      <input class="submit-btn btn" type="submit" name="submit" id="submit" value="Submit" />
+      <br>
+      </p>
+    </form>
+    </body >
+
+    <% - include('layouts/footer'); -%>

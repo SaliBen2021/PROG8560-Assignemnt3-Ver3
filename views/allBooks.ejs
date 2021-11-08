@@ -1,0 +1,40 @@
+<head>
+  <%- include('layouts/header'); -%>
+  
+</head>
+
+<body>  
+
+  <%- include('layouts/headerAdmin'); -%>
+  <div id="div1">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Image</th>
+              <th>Text</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(var post of posts){ %>
+              <tr>
+                <td>
+                  <%= post.titleDB %>
+                </td>
+                <td>
+                  <%= post.imageDB %>
+                </td>
+                <td>
+                  <%= post.contentDB %>
+                </td>
+                <td><a href="/edit/<%= post._id%>">Edit</a></td>
+                <td><a href="/delete/<%= post._id%>">Delete</a></td>
+              </tr>
+              <% } %>
+          </tbody>
+        </table>
+  </div>
+  </body>
+  <%- include('layouts/footer'); -%>

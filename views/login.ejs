@@ -1,0 +1,38 @@
+<head>
+    <%- include('layouts/header.ejs'); -%>
+    
+</head>
+
+<body>  
+
+    <%- include('layouts/headerBody.ejs'); -%>
+    <div id="div1">
+    
+        <form name="myform" method="Post" action="">
+            <p id="p3">Please enter you user name and password</p>
+            <label>Username</label>
+            <input placeholder="First Last" type="text" name="username"><br />
+            <label>Password</label>
+            <input type="password" name="password"><br />
+            <input id ="inp" type="submit" value="Login">
+            <p id="errors">
+                <%
+                    if(typeof error !== 'undefined'){
+                        %>
+                            <%=error%>
+                        <%
+                    }
+                %>
+            </p>
+        </form>
+    </div>
+</body>
+<%- include('layouts/footer'); -%>
+
+
+
+
+
+
+
+
