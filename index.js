@@ -256,7 +256,8 @@ myApp.get('/logout', function (req, res) {
 });
 
 // start the server and listen at a port
-myApp.listen(8080);
+//myApp.listen(8080);
+process.env.PORT;
 
 //tell everything was ok
 console.log('Everything executed fine.. website at port 8080....');
